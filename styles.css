@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Open Sans", serif !important;
+    user-select: none;
+}
+
+
+#about{
+    border-radius: 2px;
+    margin-right: 6px;
+}
+#about:hover{
+    background-color: #3a4047;
+    transition: 500ms;
+}   
+
+#work{
+    border-radius: 2px;
+    margin-right: 6px;
+}
+#work:hover{
+    background-color: #3a4047;
+}   
+
+#contact{
+    border-radius: 2px;
+    margin-right: 6px;
+}
+#contact:hover{
+    background-color: #3a4047;
+}   
+
+#intro-section{
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+#greetings{
+    font-size: 3rem;
+}
+
+#name{
+    color: blue;
+}
+
+#role{
+    color: blue;
+}
+
+#introduce{
+    
+}
