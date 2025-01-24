@@ -11,8 +11,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="user-select-none navbar navbar-expand-lg bg-dark navbar-dark p-3 fs-5 sticky-top">
+    <nav class="user-select-none navbar navbar-expand-lg navbar-dark p-3 fs-5 sticky-top" id="navbar-container">
         <div class="container-fluid">
             <a class="navbar-brand ps-2 fs-3" href="#">Akshat Verma</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -24,7 +23,7 @@
                         <a class="nav-link" href="#">About</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="work.html">Work</a>
+                        <a class="nav-link" href="work.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -34,90 +33,106 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div id="intro-section" class="text-light">
-        <div id="greetings">Hi!</div>
-        <div id="introduce">
-            I am <span id="name"></span>
+    <div class="container-1" id="container-1">
+        <!-- Hero Section -->
+        <div id="intro-section" class="text-light">
+            <div id="greetings">Hi!👋,</div>
+            <div id="introduce">
+                I am <span id="name"></span>
+            </div>
+            <div id="intention">
+                <span id="role"></span>
+            </div>
+            <div id="cta-buttons">
+                <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="fa fa-download"></i> Download Resume</a>
+            </div>
         </div>
-        <div id="intention">
-            an aspiring <span id="role"></span>
+
+        <div class="profile-photo-container">
+            <img src="icons/me2.png" alt="Akshat Verma" class="profile-photo" id="profile-photo">
         </div>
-        <div id="cta-buttons">
-            <a href="work.html" class="btn btn-primary btn-lg">View Work</a>
-            <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Me</a>
+    </div>
+    <!-- Navbar -->
+
+    <div class="about-section-container card" id="about-section-container">
+        <div class="about-section-header card-header fs-4" id="about-section-header">
+            About Me
+        </div>
+        <div class="about-section-content card-body " id="about-section-content">
+            I'm Akshat Verma, a passionate software developer with a love for creating impactful, user-centric solutions. With a focus on backend development, I strive to write clean, maintainable code and stay up-to-date with the latest trends. My goal is to work on projects that challenge me and make a real difference. Outside of coding, I enjoy watching anime, video games. I believe in continuous learning and am always looking for opportunities to grow. Let's collaborate on exciting projects and bring innovative ideas to life! Feel free to reach out!
         </div>
     </div>
 
-    <!-- Footer -->
-    <!-- <footer class="bg-dark text-light text-center py-3 mt-auto">
-        <p>&copy; 2025 Akshat Verma. All rights reserved.</p>
-        <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-2 col-form-label fs-5">Name</label>
-            <div class="col-sm-10">
-                <input type="name" class="form-control ms-3" id="colFormLabel" placeholder="Full Name">
+    <div id="skills-section-container">
+        <div id="skills-header">Technology</div>
+        <div id="skills-subsection">
+            This is what I usualy work with...
+        </div>
+        <div class="" id="tech-cards-container">
+            <div class="card" id="language-card">
+                <div class="card-header">Languages</div>
+                <div class="card-body" id="icons-container">
+                    <img src="icons/cpp.svg" alt="Node.js" class="icons" id="cpp-logo">
+                </div>
+            </div>
+            <div class="card" id="backend-card">
+                <div class="card-header">Backend</div>
+                <div class="card-body" id="icons-container">
+                    <img src="icons/nodejs-light.svg" alt="Node.js" class="icons">
+                    
+                </div>
+            </div>
+            <div class="card" id="frontend-card">
+                <div class="card-header" >Frontend</div>
+                <div class="card-body" id="icons-container">
+                    <img src="icons/nodejs-light.svg" alt="Node.js" class="icons">
+                    
+                </div>
+            </div>
+            <div class="card" id="database-card">
+                <div class="card-header" >Database</div>
+                <div class="card-body" id="icons-container">
+                    <img src="icons/nodejs-light.svg" alt="Node.js" class="icons">
+                    
+                </div>
             </div>
         </div>
-        <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-2 col-form-label fs-5">Email</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control ms-3" id="colFormLabel" placeholder="name@example.com">
-            </div>
-        </div>
-        <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-2 col-form-label fs-5">Subject</label>
-            <div class="col-sm-10">
-                <input type="subject" class="form-control ms-3" id="colFormLabel" placeholder="Enter Subject">
-            </div>
-        </div>
-        <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-2 col-form-label fs-5">Message</label>
-            <div class="col-sm-10">
-                <input type="message" class="form-control ms-3" id="colFormLabel" placeholder="Enter your Message">
-            </div>
-        </div>
-        
-        <div class="social-icons">
-            <a href="https://github.com" target="_blank" class="text-light mx-2" id="github"><i
-                    class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" target="_blank" class="text-light mx-2" id="linkedin"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com" target="_blank" class="text-light mx-2" id="twitter"><i
-                    class="fab fa-twitter"></i></a>
-        </div>
-    </footer> -->
+    </div>
 
     <!-- Contact Form Section -->
     <footer class="bg-dark text-light text-center py-4 mt-auto">
-        <h2 class="mb-4">Contact Me</h2>
+        <h2 class="mb-4" id="contact-section-header">Contact Me</h2>
         <form id="contact-form" class="container">
-            <div class="row mb-3 align-items-center">
+            <div class="row mb-3 align-items-center" id="name-container">
                 <label for="full-name" class="col-sm-2 col-form-label fs-5 text-sm-end">Name:</label>
                 <div class="col-sm-3" id="field">
-                    <input type="text" class="form-control" id="full-name" placeholder="Enter Full Name" required>
+                    <input type="text" id="name-field" class="form-control" id="full-name" placeholder="Enter Full Name"
+                        required>
                 </div>
             </div>
-            <div class="row mb-3 align-items-center">
+            <div class="row mb-3 align-items-center" id="email-container">
                 <label for="email" class="col-sm-2 col-form-label fs-5 text-sm-end">Email:</label>
                 <div class="col-sm-2" id="field">
-                    <input type="email" class="form-control" id="email" placeholder="Enter Email Address" required>
+                    <input type="email" id="email-field" class="form-control" id="email"
+                        placeholder="Enter Email Address" required>
                 </div>
             </div>
-            <div class="row mb-3 align-items-center">
+            <div class="row mb-3 align-items-center" id="subject-container">
                 <label for="subject" class="col-sm-2 col-form-label fs-5 text-sm-end">Subject:</label>
                 <div class="col-sm-2" id="field">
-                    <input type="text" class="form-control" id="subject" placeholder="Enter Subject" required>
+                    <input type="text" id="subject-field" class="form-control" id="subject" placeholder="Enter Subject"
+                        required>
                 </div>
             </div>
-            <div class="row mb-3 align-items-center">
+            <div class="row mb-3 align-items-center" id="message-container">
                 <label for="message" class="col-sm-2 col-form-label fs-5 text-sm-end">Message:</label>
                 <div class="col-sm-2" id="field">
-                    <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"
+                    <textarea class="form-control" id="message-field" rows="4" placeholder="Write your message here"
                         required></textarea>
                 </div>
             </div>
-            <div class="text-center" id="submit-btn">
-                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            <div class="text-center" id="submit-btn-container">
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-sm">Send Message</button>
             </div>
         </form>
 
@@ -127,7 +142,7 @@
             <a href="https://linkedin.com" target="_blank" class="text-light mx-2" id="linkedin"><i
                     class="fab fa-linkedin fs-4"></i></a>
             <a href="https://twitter.com" target="_blank" class="text-light mx-2" id="twitter"><i
-                    class="fab fa-twitter fs-4"></i></a>
+                    class="fab fa-instagram fs-4"></i></a>
         </div>
         <p class="mt-3">&copy; 2025 Akshat Verma. All rights reserved.</p>
     </footer>
