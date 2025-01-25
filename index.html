@@ -36,7 +36,7 @@
     <div class="container-1" id="container-1">
         <!-- Hero Section -->
         <div id="intro-section" class="text-light">
-            <div id="greetings">Hi!👋,</div>
+            <div id="greetings">Hi! <span id="hand-wave">👋</span>,</div>
             <div id="introduce">
                 I am <span id="name"></span>
             </div>
@@ -44,7 +44,7 @@
                 <span id="role"></span>
             </div>
             <div id="cta-buttons">
-                <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="fa fa-download"></i> Download Resume</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="fa fa-download" ></i> Download Resume</a>
             </div>
         </div>
 
@@ -59,7 +59,7 @@
             About Me
         </div>
         <div class="about-section-content card-body " id="about-section-content">
-            I'm Akshat Verma, a passionate software developer with a love for creating impactful, user-centric solutions. With a focus on backend development, I strive to write clean, maintainable code and stay up-to-date with the latest trends. My goal is to work on projects that challenge me and make a real difference. Outside of coding, I enjoy watching anime, video games. I believe in continuous learning and am always looking for opportunities to grow. Let's collaborate on exciting projects and bring innovative ideas to life! Feel free to reach out!
+            I'm Akshat Verma, a passionate software developer with a love for creating impactful, user-centric solutions. With a strong foundation in backend development, I focus on writing clean, maintainable code and designing efficient systems. I am also <a href="https://drive.google.com/file/d/1R_tup3A7Bgai6uA1jF4KXbY2FQznrw2Y/view?usp=sharing" id="certification">Microsoft Certified in Azure Fundamentals (AZ-900)</a> , showcasing my understanding of cloud concepts and their integration with backend services. Outside of coding, I enjoy watching anime and playing video games. I believe in continuous learning and am always looking for opportunities to grow. Let's collaborate on exciting projects and bring innovative ideas to life! Feel free to reach out!
         </div>
     </div>
 
@@ -69,31 +69,63 @@
             This is what I usualy work with...
         </div>
         <div class="" id="tech-cards-container">
-            <div class="card" id="language-card">
+            <div class="card card-hover" id="language-card">
                 <div class="card-header">Languages</div>
                 <div class="card-body" id="icons-container">
-                    <img src="icons/cpp.svg" alt="Node.js" class="icons" id="cpp-logo">
+                    <img src="icons/cpp.svg" alt="C++" class="icons" id="cpp-logo">
+                    <img src="icons/javascript.svg" alt="JavaScript" class="icons" id="js-logo">
+                    <img src="icons/html5.svg" alt="HTML5" class="icons" id="html-logo">
+                    <img src="icons/css3.svg" alt="CSS" class="icons" id="css-logo">
+                    <img src="icons/typescript.svg" alt="TypeScript" class="icons" id="typescript-logo">
                 </div>
             </div>
-            <div class="card" id="backend-card">
+            <div class="card card-hover" id="backend-card">
                 <div class="card-header">Backend</div>
                 <div class="card-body" id="icons-container">
-                    <img src="icons/nodejs-light.svg" alt="Node.js" class="icons">
-                    
+                    <img src="icons/nodejs-light.svg" alt="Node.js" class="icons" id="node-logo">
+                    <img src="icons/express.svg" alt="Express" class="icons" id="express-logo">
+                    <img src="icons/restAPI.svg" alt="restAPI" class="icons" id="restapi-logo">
+                    <img src="icons/postman.svg" alt="Postman" class="icons" id="postman-logo">
                 </div>
             </div>
-            <div class="card" id="frontend-card">
+            <div class="card card-hover" id="frontend-card">
                 <div class="card-header" >Frontend</div>
                 <div class="card-body" id="icons-container">
-                    <img src="icons/nodejs-light.svg" alt="Node.js" class="icons">
-                    
+                    <img src="icons/react.svg" alt="React" class="icons" id="react-logo">
+                    <img src="icons/redux.svg" alt="Redux" class="icons" id="redux-logo">
+                    <img src="icons/bootstrap.svg" alt="Bootstrap" class="icons" id="bootstrap-logo">
+                    <img src="icons/tailwind.svg" alt="Tailwind" class="icons" id="tailwind-logo">
                 </div>
             </div>
-            <div class="card" id="database-card">
-                <div class="card-header" >Database</div>
+            <div class="card card-hover" id="database-card">
+                <div class="card-header">Database</div>
                 <div class="card-body" id="icons-container">
-                    <img src="icons/nodejs-light.svg" alt="Node.js" class="icons">
-                    
+                    <img src="icons/postgres.svg" alt="PostgresSQL" class="icons" id="postgres-logo">
+                    <img src="icons/mongodb.svg" alt="MongoDB" class="icons" id="mongodb-logo">
+                    <img src="icons/redis.svg" alt="Redis" class="icons" id="redis-logo">
+                </div>
+            </div>
+            <div class="card card-hover" id="tools-card">
+                <div class="card-header" >Tools</div>
+                <div class="card-body" id="icons-container">
+                    <img src="icons/git.svg" alt="Git" class="icons" id="git-logo">
+                    <img src="icons/docker.png" alt="Docker" class="icons" id="docker-logo">
+                    <img src="icons/azure.svg" alt="Azure" class="icons" id="azure-logo">
+                    <img src="icons/cyberark.png" alt="CyberArk" class="icons" id="cyberark-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-section-container">
+        <div id="project-section-header">Projects</div>
+        <div id="projects-container">
+            <div class="card">
+                <div class="card-header">Project Name</div>
+                <div class="card-body">
+                    <div id="about-project">About Project</div>
+                    <div id="preview-project">Project Preview</div>
+                    <div id="project-repo">Project Repo Link</div>
                 </div>
             </div>
         </div>

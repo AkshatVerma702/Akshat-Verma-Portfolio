@@ -83,6 +83,27 @@ body {
     transform: scale(1.1);
 }
 
+#hand-wave{
+    scale: 1.2;
+    animation: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+ 
+
 /* Hero Section */
 #intro-section {
     width: 90vh;
@@ -135,6 +156,16 @@ body {
     padding-right: 5%;
     font-family: "Roboto", serif;
     overflow-wrap: break-word;
+}
+
+#certification{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+#certification:hover{
+    text-decoration: underline;
 }
 
 #name {
@@ -261,9 +292,12 @@ footer {
 /* Project Section */
 
 #skills-section-container{
+    font-family: "Montserrat", serif;
     margin-top: 15%;
-    margin-right: 0%;
-    border: 1px solid white;
+    margin-right: 0.2%;
+    margin-left: 0.2%;
+    margin-bottom: 10%;
+    height: 90vh;
     color: var(--text);
 }
 
@@ -272,8 +306,17 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1%;
-    row-gap: 5%;
+    row-gap: 25%;
     margin-bottom: 3%;
+    transition: all 10s ease;
+}
+
+.card-hover{
+    transition: transform 0.4s ease;
+}
+
+.card-hover:hover{
+    transform: scale(1.05);
 }
 
 #skills-header{
@@ -287,23 +330,38 @@ footer {
     font-size: 1.63rem;
 }
 
-#language-card, #backend-card, #frontend-card, #database-card{
+#language-card, #backend-card, #frontend-card, #database-card, #tools-card{
+    font-family: "Montserrat", serif;
     background-color: #393a39;
     font-size: 1.3rem;
     text-align: center;
     color: var(--text);
+    height: 130%;
 }
 #icons-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 20%;
 }
 
 .icons{
     width: 60%;
 }
 
-#cpp-logo{
-    width: 40%;
+#cpp-logo, #js-logo, #html-logo, #css-logo, #typescript-logo, #restapi-logo{
+    width: 45%;
+}
+
+#node-logo, #express-logo{
+    width: 60%;
+}
+
+#postman-logo, #react-logo, #redux-logo, #bootstrap-logo, #postgres-logo, #mongodb-logo, #git-logo, #azure-logo{
+    width: 50%;
+}
+
+#cyberark-logo{
+    width: 80%;
 }
 
 @media (max-width: 768px) {
